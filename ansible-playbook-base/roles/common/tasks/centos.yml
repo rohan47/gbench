@@ -4,3 +4,9 @@
   yum:
     name: epel-release
     state: present
+
+# Install lvm
+- name: Install lvm bits
+  yum:
+    name: "lvm2"
+    state: present
