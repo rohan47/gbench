@@ -85,6 +85,12 @@
   roles:
     - passwdless-ssh-mesh
 
+- name: Set gluster volume specification
+  hosts: servers
+  gather_facts: false
+  roles:
+    - configure-gluster-volume
+
 - name: Run benchmark tests
   hosts: all
   gather_facts: false
